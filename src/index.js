@@ -36,6 +36,7 @@ const linkInput = formNewCard['link'];
 const popupImage = document.querySelector('.popup_type_image');
 const popupImageData = popupImage.querySelector('.popup__image');
 const popupImageDescription = popupImage.querySelector('.popup__caption');
+const PopupsOverlay = document.querySelectorAll('.popup');
 
 //Редактирование и заполнение
 editProfileButton.addEventListener('click', function() {
@@ -86,11 +87,22 @@ function setImageData(cardData) {
   popupImageDescription.textContent = cardData.name;
 }
 
-/* popupEditProfile.addEventListener("click", (evt) => {
-  if (evt.currentTarget === evt.target) {
-    closePopup(popupEditProfile)
-  }
-})
+ // Закрытие попапа на оверлей
+ PopupsOverlay.forEach((popup) => {
+     popup.addEventListener('mousedown', (evt) => {
+         if (evt.target.classList.contains('popup_opened')) {
+             closePopup(popup)
+         }
+         if (evt.target.classList.contains('popup__close')) {
+           closePopup(popup)
+         }
+     
+         if (evt.currentTarget ===evt.target) {
+           closePopup(popup);
+         }
+     })
+ }) 
+
 
 
 

@@ -16,23 +16,5 @@ function openPopup(popup) {
       closePopup(popup);
     }
   };
-  
-  // Закрытие попапа на оверлей
-  const PopupOverlay = document.querySelectorAll('.popup');
-  
-  PopupOverlay.forEach((popup) => {
-      popup.addEventListener('mousedown', (evt) => {
-          if (evt.target.classList.contains('popup_opened')) {
-              closePopup(popup)
-          }
-          if (evt.target.classList.contains('popup__close')) {
-            closePopup(popup)
-          }
-      
-          if (evt.currentTarget ===evt.target) {
-            closePopup(popup);
-          }
-      })
-  }) 
-  
+   
   export {openPopup, closePopup, closeByEscape};
