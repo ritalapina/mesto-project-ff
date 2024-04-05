@@ -25,13 +25,11 @@ const formEditElement = document.forms['edit-profile'];
 const nameInput = formEditElement['name'];
 const jobInput = formEditElement['description'];
 
-
 const popupNewCard = document.querySelector('.popup_type_new-card');
 const addCardButton = document.querySelector('.profile__add-button');
 const formNewCard = document.forms['new-place'];
 const placeInput = formNewCard['place-name'];
 const linkInput = formNewCard['link'];
-
 
 const popupImage = document.querySelector('.popup_type_image');
 const popupImageData = popupImage.querySelector('.popup__image');
