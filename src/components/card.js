@@ -76,7 +76,6 @@ export function createCard(
 }
 
 // @todo: Функция удаления карточки
-//debugger
 export function deleteCard(cardItem, cardId, closePopup) {
   deleteOwnerCard(cardId)
     .then(() => {
