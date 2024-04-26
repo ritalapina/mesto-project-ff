@@ -1,3 +1,5 @@
-Проектная работа 7 спринта: 
+# Проектная работа Mesto
+https://github.com/zmkvts/mesto-project-ff.git
 
-https://ritalapina.github.io/mesto-project-ff/ 
+
+https://zmkvts.github.io/mesto-project-ff/
